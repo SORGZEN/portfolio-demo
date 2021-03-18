@@ -1,0 +1,58 @@
+ body{
+    width: 1170px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-family: Helvetica;
+}
+header{
+    background-color: black;
+    margin-top: 13%;
+}
+.about,a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    width: 5.5%;
+    
+}
+.about:hover {
+    background-color: rgb(0, 4, 255);
+    
+}
+.about{
+    float: left;
+    font : Helvetica;
+}
+.Lorem{
+   color: rgb(0, 0, 0);
+   font : italic 14px Arial, Helvetica, sans-serif;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.align{
+  
+}
+.Biglogo{
+    vertical-align: middle
+}
+.photo{
+    
+    text-align: center;
+}
+.photo img{
+    margin-top: 150px;
+    width: 400px;
+    border-top-right-radius: 250px ;
+    border-top-left-radius: 250px;
+    
+}
+.logo img{
+    width: 50px;
+}
+.logo{
+    width: 80px;
+    float: left;
+}
+footer{
+    width: 1170px;
+    height:200px;
+}
