@@ -5,16 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style_about.css" rel="stylesheet">
+    <link href="path/to/mmenu-light.css" rel="stylesheet" />
     <title>Travail</title>
 </head>
 
 <body>
 
     <header>
+        <div class="burger">
+            <a href="#my-menu"><img src="https://img.icons8.com/material/452/menu--v1.png" alt=""></a>
+
+            <nav id="my-menu">
+                <ul>
+
+                    <li>
+                        <div class="logo">
+                            <a href="index.html"><img
+                                    src="https://thumbs.gfycat.com/ElegantIncomparableArcticfox-max-1mb.gif"
+                                    alt="logo"></a>
+                        </div>
+                    </li>
+        </div>
+        </nav>
 
         <div class="logo">
-            <a href="index.html"><img src="https://thumbs.gfycat.com/ElegantIncomparableArcticfox-max-1mb.gif"
-                    alt="logo"></a>
+            <a href="index.html"><img src="https://i.giphy.com/media/xUOxeR2QRymO76z6Ba/source.gif" alt="logo"></a>
         </div>
         <div class="about">
             <a href="index.html">TRAVAIL</a>
@@ -57,6 +72,26 @@
     <footer>
 
     </footer>
+    <script src="path/to/mmenu-light.js"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                const menu = new MmenuLight(
+                    document.querySelector("#my-menu"),
+                    "(max-width: 1024px)"
+                );
+
+                const navigator = menu.navigation();
+                const drawer = menu.offcanvas();
+
+                document.querySelector("a[href='#my-menu']")
+                    .addEventListener("click", (evnt) => {
+                        evnt.preventDefault();
+                        drawer.open();
+                    });
+            }
+        );
+    </script>
 </body>
 
 </html>
