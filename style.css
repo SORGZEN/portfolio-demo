@@ -2,11 +2,22 @@ body{
 background-color: black;
 margin: 0 auto;
 font-family: Helvetica;
+width: 1170px;
 }
 header.container{
     background-color: black;
     margin-top: 10%;
     height: 200px;
+
+}
+.bio img{
+    width: 0px; 
+    height: 0px; 
+    object-fit: cover;
+    border-radius: 100px;
+    float: right;
+    
+    
 }
 .about,a{
     text-decoration: none;
@@ -22,6 +33,7 @@ header.container{
     float: left;
 }
 .logo img{
+    margin-top: 35px;
     width: 50px;
 }
 .logo{
@@ -33,6 +45,7 @@ header.container{
     grid-template-columns: repeat(3, 1fr);
     border:1px #fff;
     gap: 20px;
+    
   }
 .wrapper div{
     width: 100%;
@@ -51,3 +64,46 @@ header.container{
     height: 250px;
     float: right;
 }
+.Lorem{
+    color: rgb(255, 255, 255);
+    font : italic 14px Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+ }
+.burger img {width: 50px;}
+@media only screen and (min-width: 1025px)  {
+    .burger img {width: 0px;}
+}
+ @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .wrapper { grid-template-columns: 1fr 1fr; }
+    .container{ width: 100%; }
+    .about{color: black;}
+    .logo{
+        width: unset;
+        float: none;
+        
+    }
+    .logo img{
+        background-color: black;
+    }
+  }
+  @media only screen and (max-width: 599px) {
+    .wrapper { grid-template-columns: 1fr; }
+    .container{ width: 90%; }
+    .Lorem { padding-top: 50px;
+    }
+    .about{color: black;}
+    .logo{
+        width: unset;
+        float: none;
+        
+    }
+    .logo img{
+        background-color: black;
+    }
+    .burger img {width: 30px;}
+  }
+  
+  
